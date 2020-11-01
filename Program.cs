@@ -533,46 +533,6 @@ namespace CommunityLibrary
             else
                 testObject.quantity -= 1;
         }
-
-        public void Delete(T obj)
-        {
-            Node<T> testObject = this.Find(obj);
-
-            if (testObject == null)
-                throw new ArgumentException("Object not in List");
-
-            if (this.Length == 1)
-            {
-                // Only element in the list
-                this.head = null;
-                this.tail = null;
-                this.Length -= 1;
-                return;
-            }
-            // Item at the Head
-            if (testObject.previous == null)
-            {
-                testObject.next.previous = null;
-                this.head = testObject.next;
-                this.Length -= 1;
-                return;
-            }
-
-            // Item at the tail
-            if (testObject.next == null)
-            {
-                testObject.previous.next = null;
-                this.tail = testObject.previous;
-                this.Length -= 1;
-                return;
-            }
-
-            // Item somewhere in the middle
-            testObject.previous.next = testObject.next;
-            testObject.next.previous = testObject.previous;
-            this.Length -= 1;
-            return;
-        }
     }
 
 
