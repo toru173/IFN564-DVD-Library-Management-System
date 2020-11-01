@@ -1,2 +1,2 @@
 # IFN564-DVD-Library-Management-System
- A inventory management system for a small community library's DVD catalogue, fulfilling the requirements of IFN564
+ A inventory management system for a small community library's DVD catalogue, fulfilling the requirements of IFN564. The project requested the selection of an appropriate data structure to store the DVD and Customer objects, and an a mechanism for sorting and searching these objects. As these are easy to achieve goals this project was used as a mechanism to learn more about C#'s garbage collection, and to create classes for generic objects types.

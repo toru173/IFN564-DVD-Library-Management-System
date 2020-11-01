@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -11,7 +11,7 @@ namespace CommunityLibrary
 {
     /// <summary>
     /// Date object is implimented here rather than using one of the built in
-    /// types. The fidelity of the object is sufficient for our needs (Move release
+    /// types. The fidelity of the object is sufficient for our needs (movie release
     /// dates) and behaves externally as if it is a string in the format DD/MM/YYYY
     /// for fast data entry. Extends IComparable so that statements like the
     /// following can be written:
